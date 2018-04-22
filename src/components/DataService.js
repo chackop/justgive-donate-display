@@ -29,14 +29,14 @@ class DataService extends Component {
                 this.setState({
                     catergories: responseDoc.getElementsByTagName('categories')[0].textContent.split(/(?=[A-Z])/),
                     desc: responseDoc.getElementsByTagName('description')[0].textContent,
-                    donationDisplayAmounts = responseDoc.getElementsByTagName('donationDisplayAmounts')[0].textContent,
-                    emailId = responseDoc.getElementsByTagName('emailAddress')[0].textContent,
-                    impactStatementWhat = responseDoc.getElementsByTagName('impactStatementWhat')[0].textContent,
-                    logoAbsoluteUrl = responseDoc.getElementsByTagName('logoAbsoluteUrl')[0].textContent,
-                    mobileAppeals = responseDoc.getElementsByTagName('mobileAppeals')[0].textContent,
-                    name = responseDoc.getElementsByTagName('name')[0].textContent,
-                    profilePageUrl = responseDoc.getElementsByTagName('profilePageUrl')[0].textContent,
-                    registrationNumber = responseDoc.getElementsByTagName('registrationNumber')[0].textContent,
+                    donationDisplayAmounts: responseDoc.getElementsByTagName('donationDisplayAmounts')[0].textContent,
+                    emailId: responseDoc.getElementsByTagName('emailAddress')[0].textContent,
+                    impactStatementWhat: responseDoc.getElementsByTagName('impactStatementWhat')[0].textContent,
+                    logoAbsoluteUrl: responseDoc.getElementsByTagName('logoAbsoluteUrl')[0].textContent,
+                    mobileAppeals: responseDoc.getElementsByTagName('mobileAppeals')[0].textContent,
+                    name: responseDoc.getElementsByTagName('name')[0].textContent,
+                    profilePageUrl: responseDoc.getElementsByTagName('profilePageUrl')[0].textContent,
+                    registrationNumber: responseDoc.getElementsByTagName('registrationNumber')[0].textContent,
                 });
                 // donData.categories = responseDoc.getElementsByTagName('categories')[0].textContent.split(/(?=[A-Z])/);
                 // console.log(donData);
@@ -59,8 +59,17 @@ class DataService extends Component {
         return (
             <div>
                 <h1>DataService</h1>
+                <p>{this.state.catergories}</p>
                 <p>{this.state.desc}</p>
-            </div >
+                <p>{this.state.donationDisplayAmounts}</p>
+                <p>{this.state.emailId}</p>
+                <p>{this.state.impactStatementWhat}</p>
+                <p>{this.state.logoAbsoluteUrl}</p>
+                <p>{this.state.mobileAppeals}</p>
+                <p>{this.state.name}</p>
+                <p>{this.state.profilePageUrl}</p>
+                <p>{this.state.registrationNumber}</p>
+            </div>
         );
     }
 }
