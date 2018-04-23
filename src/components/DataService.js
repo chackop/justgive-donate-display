@@ -59,38 +59,38 @@ class DataService extends Component {
         //     )
         // }
         return (
-            <div>
-                <h1>DataService</h1>
-                <p>{this.state.catergories}</p>
-                <p>{this.state.desc}</p>
-                <p>{this.state.donationDisplayAmounts}</p>
-                <p>{this.state.emailId}</p>
-                <p>{this.state.impactStatementWhat}</p>
-                <p>{this.state.logoAbsoluteUrl}</p>
-                <p>{this.state.mobileAppeals}</p>
-                <p>{this.state.name}</p>
-                <p>{this.state.profilePageUrl}</p>
-                <p>{this.state.registrationNumber}</p>
-            </div>
-            // <Card>
-            //     <CardHeader
-            //         title="URL Avatar"
-            //         subtitle="Subtitle"
-            //         avatar="images/jsa-128.jpg"
-            //     />
-            //     <CardMedia
-            //         overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
-            //     >
-            //         <img src="images/nature-600-337.jpg" alt="" />
-            //     </CardMedia>
-            //     <CardTitle title="Card title" subtitle="Card subtitle" />
-            //     <CardText>
-            //         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            //         Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-            //         Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-            //         Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-            //     </CardText>
-            // </Card>
+            <Card>
+                <CardText>
+                    {this.state.catergories}
+                </CardText>
+                <CardText>
+                    {this.state.desc}
+                </CardText>
+                <CardText>
+                    {this.state.donationDisplayAmounts}
+                </CardText>
+                <CardText>
+                    {this.state.emailId}
+                </CardText>
+                <CardText>
+                    {this.state.impactStatementWhat}
+                </CardText>
+                <CardText>
+                    {this.state.logoAbsoluteUrl}
+                </CardText>
+                <CardText>
+                    {this.state.mobileAppeals}
+                </CardText>
+                <CardText>
+                    {this.state.name}
+                </CardText>
+                <CardText>
+                    {this.state.profilePageUrl}
+                </CardText>
+                <CardText>
+                    {this.state.registrationNumber}
+                </CardText>
+            </Card>
         );
     }
 }
